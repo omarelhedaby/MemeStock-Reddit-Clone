@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp">
+        <TextView
+                android:text="SubReddit Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/srName" android:layout_weight="1"
+                android:textSize="18sp" android:textColor="@color/darkorange" android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/postOrComment" android:layout_weight="1"
+                android:textSize="16sp" android:textColor="@color/black" android:hint="Post or Comment"/>
+        <Button
+                android:text="Delete Report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/deleteReport" android:layout_weight="1"
+                android:background="@color/black" android:textColor="@color/white"/>
+        <Button
+                android:text="Leave Moderation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/leaveModeration" android:layout_weight="1"
+                android:textColor="@color/white" android:background="@color/black" android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.memestock">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/redditl"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/redditl"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".EditThread">
+        </activity>
+        <activity
+                android:name=".Create_SubReddit"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".Subreddit">
+        </activity>
+        <activity
+                android:name=".comment"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".AddSubRedit">
+        </activity>
+        <activity android:name=".Search">
+        </activity>
+        <activity
+                android:name=".post"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <!--
+<activity android:name=".Post">
+        </activity>
+        -->
+        <activity android:name=".Reports"/>
+        <activity android:name=".Reply"/>
+        <activity android:name=".ViewMessages">
+        </activity>
+        <activity
+                android:name=".Messaging"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".passwordchange"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+                android:name=".emailchange"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".Settings">
+        </activity>
+        <activity android:name=".Notification">
+        </activity>
+        <activity android:name=".Profile">
+        </activity>
+        <activity
+                android:name=".EditProfile"
+                android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".Register">
+        </activity>
+        <activity
+                android:name=".editComment"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".OthersProfile">
+        </activity>
+        <activity android:name=".HomePage">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

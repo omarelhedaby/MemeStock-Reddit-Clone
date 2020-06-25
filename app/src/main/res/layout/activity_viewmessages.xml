@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <LinearLayout
+            android:fitsSystemWindows="false"
+
+            android:orientation="horizontal"
+            android:layout_width="399dp"
+            android:layout_height="67dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/linearLayout4" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <ImageButton
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_attach_file_black_24dp"
+                android:id="@+id/Settings" android:layout_weight="1" android:onClick="buClick"/>
+        <ImageButton
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" app:srcCompat="@drawable/message" android:id="@+id/Messaging"
+                android:layout_weight="1" android:onClick="buClick"/>
+        <ImageButton
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_home_black_24dp"
+                android:id="@+id/Home" android:layout_weight="1" android:onClick="buClick"/>
+        <ImageButton
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" app:srcCompat="@drawable/post" android:id="@+id/Post"
+                android:layout_weight="1" android:onClick="buClick"/>
+        <ImageButton
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" app:srcCompat="@drawable/persoicon" android:id="@+id/Profile"
+                android:layout_weight="1" android:onClick="buClick"/>
+        <ImageButton
+                android:background="@color/white"
+                android:layout_width="110dp"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_attach_file_black_24dp"
+                android:id="@+id/Notification2" android:layout_weight="1" android:onClick="buClick"/>
+    </LinearLayout
+    >
+    <Button
+            android:text="Compose"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/SendMess" android:background="@color/darkorange"
+            android:onClick="buCompose" android:layout_marginTop="40dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="36dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="36dp"/>
+    <ListView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/inboxListView"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4" android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow2" android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"/>
+    <TableRow
+            android:layout_width="0dp"
+            android:layout_height="65dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/SendMess" android:id="@+id/tableRow2">
+        <Button
+                android:text="Inbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/buInbox"
+                android:background="@color/whitebackground"
+                android:layout_weight="1"
+                tools:layout_editor_absoluteY="140dp" tools:layout_editor_absoluteX="0dp" android:onClick="buInbox"/>
+        <Button
+                android:text="Sent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/buSent"
+                app:layout_constraintTop_toBottomOf="@+id/buInbox" android:background="@color/whitebackground"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_weight="1" android:onClick="buSent"/>
+        <Button
+                android:text="Blocked List"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/buBlocked" android:background="@color/whitebackground"
+                app:layout_constraintTop_toBottomOf="@+id/buSent"
+                android:layout_weight="1" android:onClick="buBlock"/>
+    </TableRow>
+    <Button
+            android:text="Mark Read-all"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/markRead" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:onClick="buReadAll" android:textSize="12sp"
+            android:textColor="@color/white" android:background="@color/black"/>
+    <Button
+            android:text="Mark Unread-all"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/unmarkRead"
+            app:layout_constraintTop_toBottomOf="@+id/markRead" android:textSize="12sp"
+            android:textColor="@color/white" android:onClick="buUnreadAll" android:background="@color/black"
+            android:layout_marginTop="4dp"/>
+</android.support.constraint.ConstraintLayout>

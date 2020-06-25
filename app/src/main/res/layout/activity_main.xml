@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <EditText
+            android:layout_width="285dp"
+            android:layout_height="86dp"
+            android:inputType="textPersonName"
+            android:hint="Username"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/userpost" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.49" android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/password"/>
+    <EditText
+            android:layout_width="286dp"
+            android:hint="Password"
+            android:gravity="center"
+            android:layout_height="85dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.495"
+            android:layout_marginBottom="64dp" app:layout_constraintBottom_toTopOf="@+id/login"/>
+    <ImageView
+            android:layout_width="162dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/reddit"
+            android:id="@+id/imageView3" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/userpost" app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.0"/>
+    <Button
+            android:text="Login"
+            android:background="@color/darkorange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            style="@style/Widget.AppCompat.Button"
+            android:onClick="LoginClick" android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/register" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"/>
+    <Button
+            android:text="Register"
+            android:background="@color/darkorange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:onClick="RegisterClick"
+            app:layout_constraintHorizontal_bias="0.501" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/forgot"/>
+    <TextView
+            android:textColor="@color/darkorange"
+            android:textSize="15dp"
+            android:text="Forgot Password?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgot" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/modinvit"
+            android:title="Invite "/>
+
+    <item
+            android:id="@+id/removemod"
+            android:title="Remove" />
+    <item
+            android:id="@+id/banmod"
+            android:title="Ban" />
+
+    <item
+            android:id="@+id/unbanmod"
+            android:title="Unban" />
+</menu>

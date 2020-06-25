@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="400dp"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textColor="@color/black"
+                android:textSize="9pt"
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_width="250dp"
+                android:layout_height="match_parent" android:id="@+id/requestuser" android:layout_weight="1"/>
+        <Button
+                android:background="@color/darkorange"
+                android:textColor="@color/white"
+                android:text="Accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/Accept" android:layout_weight="1"/>
+        <Space
+                android:layout_width="1dp"
+                android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button
+                android:background="@color/white"
+                android:text="Refuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/Refuse" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/gray"
+              android:orientation="vertical"
+
+>
+    <LinearLayout
+            android:background="@drawable/background_layout"
+            android:layout_margin="3pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:background="@color/whiteback"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:id="@+id/Author"
+                android:layout_weight="1" tools:ignore="RtlCompat"/>
+
+        <TextView
+                android:paddingLeft="10pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:id="@+id/Reply"
+                android:layout_weight="10"
+                android:scrollbars="vertical"
+
+                android:hint="Reply Shows Here"/>
+    </LinearLayout>
+</LinearLayout>

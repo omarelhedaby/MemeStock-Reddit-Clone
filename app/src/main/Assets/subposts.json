@@ -1,0 +1,40 @@
+[
+  {
+    "postid": "123",
+    "title" : "Vietnam",
+    "username":"omar123",
+    "upvote":2,
+    "downvote":3,
+    "postdate": "12-8-2019",
+    "body": "when i was in Vietnam I travelled to Ho chi minh city, Hoi an ,Ninh Binh and the best time I had was in Halong Bay"
+  },
+  {
+    "postid": "111",
+    "title" : "Android P",
+    "username":"emadAI",
+    "upvote":2,
+    "downvote":3,
+    "postdate": "15-7-2018",
+    "body": "I have problem downloading the Android P update, my phone is Samsung S10+"
+  },
+  {
+
+    "postid": "12222",
+    "title" : "The Night King , the Rightful heir to the throne",
+    "username":"NED_Stark123",
+    "upvote":2,
+    "downvote":3,
+    "postdate": "15-9-2020",
+    "body": "I think that the Night King is actually ned stark but hiding behind a mask could be a valid theory, we willsee :D"
+  },
+  {
+    "postid": "12223",
+    "title" : "Thanos ,Villian or Hero",
+    "username":"Tony/Ned_Stark",
+    "upvote":2,
+    "downvote":3,
+    "postdate": "24-4-2019",
+    "body":"Going to see Avengers Endgame i dont know what to expect tonight , I hope Captain Marvel know that she is not as strong as she this she is"
+  }
+
+]

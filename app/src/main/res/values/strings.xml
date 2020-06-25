@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MemeStock</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string-array name="Combo">
+        <item>Top</item>
+        <item>Hot</item>
+        <item>New</item>
+    </string-array>
+</resources>

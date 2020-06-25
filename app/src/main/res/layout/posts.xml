@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/gray"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:background="@color/white"
+            android:layout_margin="3pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/subreddit" android:layout_weight="1"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/date" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/userpost"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content" android:id="@+id/Linearmenu">
+            <Space
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageButton
+                    android:scaleType="fitXY"
+                    android:background="@color/white"
+                    android:layout_width="22dp"
+                    android:layout_height="30dp" app:srcCompat="@drawable/menu" android:id="@+id/menu"/>
+        </LinearLayout>
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:id="@+id/LinearSpoiler"
+                      android:layout_height="wrap_content" android:visibility="visible">
+            <Button
+                    android:background="@color/darkorange"
+                    android:text="Show Spoiler"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" android:id="@+id/Spoiler"/>
+            <Space
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+
+
+                android:id="@+id/post"
+                android:paddingLeft="10pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pattern Generator  Create any pattern of your own - tiles, texture, skin, wallpaper, comic effect, website background and more.  Change any artwork of pattern you found into different flavors and call them your own."
+                android:gravity="fill|left"/>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content" app:srcCompat="@mipmap/ic_launcher_round"
+                android:id="@+id/meme"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageButton
+                    android:layout_width="1pt"
+                    android:scaleType="fitXY"
+                    android:background="@color/white"
+                    android:layout_height="15pt" app:srcCompat="@drawable/upvote"
+                    android:id="@+id/upvote" android:layout_weight="1"/>
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/votenum" android:layout_weight="1"/>
+            <ImageView
+                    android:id="@+id/downvote"
+                    android:scaleType="fitXY"
+                    android:layout_width="1pt"
+                    android:layout_height="15pt"
+                    android:layout_marginRight="10pt"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/downvote"/>
+
+            <!--     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent" android:id="@+id/downvotenum" android:layout_weight="1"/>
+              -->   <Space
+                         android:layout_width="200dp"
+                         android:layout_height="wrap_content" android:layout_weight="1"/>
+                 <ImageView
+
+                         android:id="@+id/reply"
+                         android:scaleType="fitXY"
+                         android:layout_width="2pt"
+                         android:layout_height="15pt"
+                         android:layout_weight="1"
+                         app:srcCompat="@drawable/ic_send_black_24dp"/>
+             </LinearLayout>
+
+         </LinearLayout>
+
+     </LinearLayout>

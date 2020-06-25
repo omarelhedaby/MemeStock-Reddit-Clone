@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="100">
+
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/Sender" android:textSize="22sp"
+            android:textColor="@color/darkorange" android:textStyle="bold"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/Subject" android:textSize="18sp"
+            android:textColor="@color/black" android:textStyle="italic" android:textAllCaps="false"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" android:id="@+id/messageBody"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+        <Space
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageButton
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_delete_black_24dp"
+                android:scaleType="fitXY"
+                android:id="@+id/deletBu" android:layout_weight="1"/>
+        <ImageButton
+                android:scaleType="fitXY"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_mode_edit_black_24dp"
+                android:id="@+id/markAsRead"
+                android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
